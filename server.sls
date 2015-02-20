@@ -9,7 +9,7 @@ bird_packages:
 bird_config:
   file.managed:
   - name: {{ server.config }}
-  - source: salt://bird/bird.conf
+  - source: salt://bird/files/bird.conf
   - template: jinja
   - require:
     - pkg: bird_packages
