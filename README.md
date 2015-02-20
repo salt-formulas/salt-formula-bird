@@ -7,7 +7,8 @@ The BIRD project aims to develop a fully functional dynamic IP routing daemon pr
     bird:
       server:
         enabled: True
-        bind:
+        logging:
+          engine: syslog
         protocol:
           my_ospf:
             type: ospf
