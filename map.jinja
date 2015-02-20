@@ -1,0 +1,14 @@
+{% set server = salt['grains.filter_by']({
+    'Debian': {
+        'pkgs': ['bird'],
+        'service': 'bird',
+        'config': '/etc/bird/bird.conf',
+        'instance': {}
+    },
+    'RedHat': {
+        'pkgs': ['bird'],
+        'service': 'bird',
+        'config': '/etc/bird/bird.conf',
+        'instance': {}
+    },
+}, merge=salt['pillar.get']('bird:server')) %}
