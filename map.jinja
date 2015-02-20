@@ -4,12 +4,17 @@
     'hello',
 ] %}
 
+{% set protocol_params = [
+    'emcp',
+] %}
+
 {% set server = salt['grains.filter_by']({
     'Debian': {
         'pkgs': ['bird'],
         'service': 'bird',
         'config': '/etc/bird/bird.conf',
         'interface_params': interface_params,
+        'protocol_params': protocol_params,
         'instance': {}
     },
     'RedHat': {
@@ -17,6 +22,7 @@
         'service': 'bird',
         'config': '/etc/bird/bird.conf',
         'interface_params': interface_params,
+        'protocol_params': protocol_params,
         'instance': {}
     },
 }, merge=salt['pillar.get']('bird:server')) %}
