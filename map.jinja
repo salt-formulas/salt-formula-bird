@@ -1,14 +1,22 @@
+
+{% set interface_params = [
+    'type',
+    'hello',
+] %}
+
 {% set server = salt['grains.filter_by']({
     'Debian': {
         'pkgs': ['bird'],
         'service': 'bird',
         'config': '/etc/bird/bird.conf',
+        'interface_params': interface_params,
         'instance': {}
     },
     'RedHat': {
         'pkgs': ['bird'],
         'service': 'bird',
         'config': '/etc/bird/bird.conf',
+        'interface_params': interface_params,
         'instance': {}
     },
 }, merge=salt['pillar.get']('bird:server')) %}
