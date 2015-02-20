@@ -14,7 +14,7 @@ The BIRD project aims to develop a fully functional dynamic IP routing daemon pr
             type: ospf
             tick: 2
             rfc1583compat: True
-            ecmp: yes
+            ecmp: True
             area:
               0.0.0.0:
                 interface:
