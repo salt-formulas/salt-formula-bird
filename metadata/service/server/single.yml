@@ -1,0 +1,8 @@
+applications:
+- bird
+parameters:
+  bird:
+    server:
+      enabled: True
+      logging:
+        engine: syslog
