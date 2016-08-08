@@ -6,6 +6,8 @@ The BIRD project aims to develop a fully functional dynamic IP routing daemon pr
 Sample pillar
 =============
 
+.. code-block:: yaml
+
     bird:
       server:
         enabled: True
