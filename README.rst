@@ -1,8 +1,12 @@
-# BIRD
-
+===========
+BIRD
+===========
 The BIRD project aims to develop a fully functional dynamic IP routing daemon primarily targeted on (but not limited to) Linux, FreeBSD and other UNIX-like systems and distributed under the GNU General Public License. 
 
-## Sample pillar
+Sample pillar
+=============
+
+.. code-block:: yaml
 
     bird:
       server:
@@ -31,7 +35,7 @@ The BIRD project aims to develop a fully functional dynamic IP routing daemon pr
                     paramX: xxx
  
 
-## Read more
-
+Read more
+=========
 * http://bird.network.cz/
 * https://gitlab.labs.nic.cz/labs/bird/wikis/home
