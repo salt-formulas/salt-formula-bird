@@ -1,0 +1,5 @@
+salt-formula-bird (0.1) trusty; urgency=medium
+
+  * Initial release
+
+ -- Filip Pytloun <filip@pytloun.cz>  Wed, 23 Nov 2016 14:02:21 +0100

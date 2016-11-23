@@ -1,0 +1,15 @@
+Source: salt-formula-bird
+Maintainer: Filip Pytloun <filip.pytloun@tcpcloud.eu>
+Section: admin
+Priority: optional
+Build-Depends: salt-master, python, python-yaml, debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://www.tcpcloud.eu
+Vcs-Browser: https://github.com/tcpcloud/salt-formula-bird
+Vcs-Git: https://github.com/tcpcloud/salt-formula-bird.git
+
+Package: salt-formula-bird
+Architecture: all
+Depends: ${misc:Depends}, salt-master, reclass
+Description: bird salt formula
+ Install and configure bird.
