@@ -15,6 +15,8 @@ Sample Pillars
         enabled: True
         logging:
           engine: syslog
+        network:
+          engine: baremetal
         protocol:
           my_ospf:
             type: ospf
